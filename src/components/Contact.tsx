@@ -50,10 +50,11 @@ export default function Contact() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Let's <span className="text-cyan-400">Connect</span>
             </h2>
+            
             <p className="text-white/60 text-lg mb-10 leading-relaxed">
-              Our team is ready to help you turn your ideas into real world sales. Reach out to get started!
+            Our team is ready to help you turn your ideas into real world sales. Reach out to get started!
             </p>
-
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
