@@ -16,13 +16,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          
-          <p className="text-cyan-300/90 text-sm md:text-base font-medium tracking-[0.3em] uppercase mb-4">
-            Visionary Studios
-          </p>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[1.05]">
-            {headline.split(' ').map((word, i) => (
-              <motion.span
                 key={i}
                 className="inline-block mr-[0.08em]"
                 initial={{ opacity: 0, y: 40 }}
