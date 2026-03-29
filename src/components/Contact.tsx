@@ -54,22 +54,6 @@ export default function Contact() {
               Our team is ready to help you turn your ideas into real world sales. Reach out to get started!
             </p>
 
-            <div className="space-y-6">
-              <motion.a
-                href="mailto:visionary000studios@gmail.com"
-                className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-cyan-400/40 hover:bg-white/[0.06] transition-all duration-300 group w-fit"
-                whileHover={{ x: 10 }}
-              >
-                <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-400/20 group-hover:bg-cyan-500/20 transition-colors">
-                  <Mail className="w-6 h-6 text-cyan-400" />
-                </div>
-                <div>
-                  <p className="text-sm text-white/40 font-medium">Email us at</p>
-                  <p className="text-white font-medium">visionary000studios@gmail.com</p>
-                </div>
-              </motion.a>
-            </div>
-          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
