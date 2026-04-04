@@ -6,8 +6,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/10 bg-black pt-24 pb-12 overflow-hidden">
-      
+    <footer className="relative bg-black pt-24 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-1">
@@ -25,7 +24,6 @@ export default function Footer() {
               Bringing real world sales to Roblox games
             </p>
             <div className="flex gap-4">
-          
             </div>
           </div>
           <div className="lg:col-start-4">
