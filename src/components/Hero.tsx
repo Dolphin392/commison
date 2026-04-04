@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const headline = "Visionary Studios";
-const subline = "Bringing real world sales to roblox games";
+const subline = "Bringing real world sales to Roblox games";
 
 export default function Hero() {
   return (
