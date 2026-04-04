@@ -44,6 +44,12 @@ export default function Footer() {
           <p className="text-white/30 text-sm">
             © {new Date().getFullYear()} Visionary Studios. All rights reserved.
           </p>
+          
+            href="/privacy"
+            className="text-white/40 hover:text-cyan-300 transition-colors text-sm"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>
