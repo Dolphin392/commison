@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import Navigation from './Navigation';
+import Footer from './Footer';
 
 const sections = [
   { title: 'Overview', content: 'This Privacy Policy explains how Visionary Studios handles information collected through visionarystudio.net. This is a B2B outreach site — we do not sell products, process payments, or create user accounts here.' },
@@ -13,40 +15,50 @@ const sections = [
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-24">
-      <div className="max-w-3xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-16"
-        >
-          <p className="text-cyan-400 text-sm font-medium tracking-widest uppercase mb-4">Legal</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Privacy Policy</h1>
-          <p className="text-white/40 text-sm">Last updated: April 2026</p>
-          <div className="mt-8 h-px w-full bg-gradient-to-r from-cyan-500/30 via-white/10 to-transparent" />
-        </motion.div>
+    <div className="relative min-h-screen bg-black">
+      <Navigation />
+      <main className="text-white px-6 pt-40 pb-24">
+        <div className="max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <p className="text-cyan-400 text-sm font-medium tracking-widest uppercase mb-4">Legal</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Privacy Policy</h1>
+            <p className="text-white/40 text-sm">Last updated: April 2026</p>
+            <div className="mt-8 h-px w-full bg-gradient-to-r from-cyan-500/30 via-white/10 to-transparent" />
+          </motion.div>
 
-        <div className="space-y-12">
-          {sections.map((section, i) => (
-            <motion.div
-              key={section.title}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.07 }}
+          <div className="space-y-12">
+            {sections.map((section, i) => (
+              <motion.div
+                key={section.title}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.07 }}
+              >
+                <h2 className="text-lg font-semibold text-cyan-400 mb-3 tracking-tight">{section.title}</h2>
+                <p className="text-white/60 leading-relaxed text-sm">{section.content}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-20 pt-8 border-t border-white/10">
+            
+              href="/"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all text-sm font-medium"
             >
-              <h2 className="text-lg font-semibold text-cyan-400 mb-3 tracking-tight">{section.title}</h2>
-              <p className="text-white/60 leading-relaxed text-sm">{section.content}</p>
-            </motion.div>
-          ))}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 12H5M12 5l-7 7 7 7" />
+              </svg>
+              Back to Home
+            </a>
+          </div>
         </div>
-
-        <div className="mt-20 pt-8 border-t border-white/10">
-          <a href="/" className="text-white/40 hover:text-cyan-300 transition-colors text-sm">
-            Back to Home
-          </a>
-        </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </div>
   );
 }
