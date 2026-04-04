@@ -46,11 +46,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div className="mt-20 pt-8 border-t border-white/10">
-            
-              href="/"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all text-sm font-medium"
-            >
-              <span>&#8592;</span>
+            <a href="/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 transition-all text-sm font-medium">
               <span>Back to Home</span>
             </a>
           </div>
