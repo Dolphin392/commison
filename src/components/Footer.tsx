@@ -23,8 +23,6 @@ export default function Footer() {
             <p className="text-white/50 mb-8 max-w-sm leading-relaxed">
               Bringing real world sales to Roblox games
             </p>
-            <div className="flex gap-4">
-            </div>
           </div>
           <div className="lg:col-start-4">
             <h3 className="text-white font-semibold mb-6">Services</h3>
@@ -42,12 +40,9 @@ export default function Footer() {
         </div>
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-white/30 text-sm">
-            © {new Date().getFullYear()} Visionary Studios. All rights reserved.
+            {`© ${new Date().getFullYear()} Visionary Studios. All rights reserved.`}
           </p>
-          
-            href="/privacy"
-            className="text-white/40 hover:text-cyan-300 transition-colors text-sm"
-          >
+          <a href="/privacy" className="text-white/40 hover:text-cyan-300 transition-colors text-sm">
             Privacy Policy
           </a>
         </div>
