@@ -1,15 +1,12 @@
 import { motion } from 'framer-motion';
 
-
 const footerLinks = {
   Services: ['Plushie Drops', 'Revenue Sharing', 'Fulfillment'],
 };
 
-
 export default function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-black pt-24 pb-12 overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
       
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -31,7 +28,6 @@ export default function Footer() {
           
             </div>
           </div>
-
           <div className="lg:col-start-4">
             <h3 className="text-white font-semibold mb-6">Services</h3>
             <ul className="space-y-4">
@@ -46,18 +42,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-white/30 text-sm">
             © {new Date().getFullYear()} Visionary Studios. All rights reserved.
           </p>
-          <div className="flex items-center gap-8 text-sm">
-            <a href="#contact" className="text-white/40 hover:text-cyan-300 transition-colors">
-              Contact Us
-            </a>
-            <a href="#contact" className="text-white/40 hover:text-cyan-300 transition-colors flex items-center gap-1">
-            </a>
-          </div>
         </div>
       </div>
     </footer>
