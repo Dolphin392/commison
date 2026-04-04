@@ -25,7 +25,7 @@ export default function Footer() {
               </span>
             </motion.div>
             <p className="text-white/50 mb-8 max-w-sm leading-relaxed">
-              Bringing real world sales to roblox games
+              Bringing real world sales to Roblox games
             </p>
             <div className="flex gap-4">
           
